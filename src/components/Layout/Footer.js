@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  InstagramLogo,
+  LinkedinLogo,
+  FacebookLogo,
+  EnvelopeSimple,
+  At,
+  PhoneCall,
+} from "@phosphor-icons/react";
 
 function Footer() {
   return (
@@ -13,28 +21,23 @@ function Footer() {
                     <img src="images/MainLogo.png" alt="" />
                   </div>
                   <div class="aon-footer-text-2">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered predefined.
+                    Realm Consulting Services: Your Trusted Partner for
+                    Strategic Solutions and Growth.
                   </div>
                   <ul class="aon-social-icon-2 d-flex">
                     <li>
                       <a href="javascript:void(0);">
-                        <i class="feather-facebook"></i>
+                        <FacebookLogo size={24} color="blue" />
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);">
-                        <i class="feather-twitter"></i>
+                        <InstagramLogo size={24} color="#cc0096" />
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);">
-                        <i class="feather-linkedin"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);">
-                        <i class="feather-instagram"></i>
+                        <LinkedinLogo size={24} color="#004ecc" />
                       </a>
                     </li>
                   </ul>
@@ -43,22 +46,27 @@ function Footer() {
               <div class="col-lg-3 col-md-6 col-12">
                 <div class="aon-ftr-info-wrap f-margin">
                   <h4 class="aon-f-title-2">Information</h4>
-                  <ul class="aon-ftr-info">
+                  <ul class="aon-ftr-info test" style={{ paddingLeft: "0px" }}>
                     <li>
-                      <i class="feather-mail"></i>
-                      <span>info.demo@gmail.com</span>
+                      <span style={{ marginRight: "8px" }}>
+                        {" "}
+                        <EnvelopeSimple size={24} color="#303031" />
+                      </span>
+                      <span>info@rcspl.co.in</span>
                     </li>
                     <li>
-                      <i class="feather-phone"></i>
-                      <span>Call Me (+55) - 66 99 88</span>
+                      <span style={{ marginRight: "8px" }}>
+                        <PhoneCall size={24} color="#303031" />
+                      </span>
+                      <span>Call Me 98220 59460</span>
                     </li>
                     <li>
-                      <i class="feather-map-pin"></i>
+                      <span style={{ marginRight: "8px" }}>
+                        <At size={24} color="#303031" />
+                      </span>
                       <span>
-                        Sydney Harbour Bridge <br />
-                        Circular City of Sydney,
-                        <br />
-                        Australia.
+                        1314, 13th Floor, C1, Opal Square, S. G. Barve Road,
+                        Wagle Estate, Thane - 400604, Maharashtra, India.
                       </span>
                     </li>
                   </ul>
@@ -84,7 +92,7 @@ function Footer() {
                       value=""
                       name="q"
                       type="search"
-                      placeholder="Enter You Newslatter..."
+                      placeholder="Enter You email..."
                     />
                     <button type="button" class="search-btn news-latter-btn">
                       <i class="feather-arrow-right"></i>
@@ -98,7 +106,7 @@ function Footer() {
                       <a href="about.html">Privacy policy</a>
                     </li>
                     <li>
-                      <a href="about.html">Career</a>
+                      <a href="about.html">About us</a>
                     </li>
                   </ul>
                 </div>

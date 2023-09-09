@@ -1,7 +1,11 @@
 import React from "react";
+import Islider1 from "../lib/images/slider1.jpg";
+import Islider2 from "../lib/images/slider2.jpeg";
+import Islider3 from "../lib/images/slider3.jpeg";
 
 function Slider() {
-  const slides = [1, 2, 3, 4];
+  const slides = [1, 2, 3];
+
   return (
     <>
       <div class="aon-bnr-carousal-area">
@@ -12,8 +16,10 @@ function Slider() {
                 <div key={data} class="item">
                   <div
                     class="aon-slider1-wrap"
-                    styles={{
-                      backgroundImage: "url(images/slider-home-1/bg-1.jpg)",
+                    style={{
+                      backgroundImage: `url(${
+                        data === 1 ? Islider1 : data === 2 ? Islider2 : Islider3
+                      })`,
                     }}
                   >
                     <div class="overlay"></div>
@@ -25,14 +31,6 @@ function Slider() {
                         <div class="aon-slider1-detail">
                           Maecenas convallis eros eget libero viverra, id
                           sodales libero semper.
-                        </div>
-                        <div class="aon-slider1-btn">
-                          <a
-                            class="site-button site-btn-curve"
-                            href="booking-form.html"
-                          >
-                            <i class="feather-plus"></i> Book Now
-                          </a>
                         </div>
                       </div>
                     </div>
