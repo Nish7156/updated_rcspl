@@ -1,6 +1,6 @@
 import React from "react";
-import keyAreas from "../lib/KeyAreas"
-
+import keyAreas from "../lib/KeyAreas";
+import { Info } from "@phosphor-icons/react";
 
 function ServiceCard() {
   return (
@@ -30,32 +30,28 @@ function ServiceCard() {
                                 src="images/blog/latest-blog/pic1.jpg"
                               />
                             </div>
-                            <div class="post-info d-flex flex-column justify-content-between " style={{
-                              minHeight: "450px",
-                              overflowY: "auto",
-                            }}>
-
+                            <div
+                              class="post-info d-flex flex-column justify-content-between "
+                              style={{
+                                minHeight: "450px",
+                                overflowY: "auto",
+                              }}
+                            >
                               <div>
-
                                 <div class="post-text">
-                                  <h4 class="post-title">
-                                    {data.title}
-                                  </h4>
+                                  <h4 class="post-title">{data.title}</h4>
                                 </div>
 
                                 <div class="aon-post-text">
-                                  <p>
-                                    {data.description}
-                                  </p>
+                                  <p>{data.description}</p>
                                 </div>
-
                               </div>
                               <div class="aon-post-btn">
                                 <a
                                   class="aon-latest-blog-btn blog-btn-curve"
                                   href="blog-single.html"
                                 >
-                                  <i class="fa fa-plus"></i> Read More
+                                  <Info size={22} color="white" /> Read More
                                 </a>
                               </div>
                             </div>
