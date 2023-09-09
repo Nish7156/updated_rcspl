@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 import keyAreas from "../../lib/Constant";
+import {
+  InstagramLogo,
+  LinkedinLogo,
+  FacebookLogo,
+  CurrencyInr,
+} from "@phosphor-icons/react";
 
 function Header() {
   const [showLogo, setShowLogo] = useState(false);
@@ -64,7 +70,7 @@ function Header() {
                 <div class="logo-header">
                   <div class="logo-header-inner logo-header-one">
                     <a href="index.html">
-                      <img src="images/logo.png" alt="" />
+                      <img src="images/MainLogo.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -84,7 +90,7 @@ function Header() {
               </button>
               {showLogo && (
                 <div
-                  class=""
+                  class="d-none d-md-block"
                   style={{
                     height: "auto",
                     width: "190px",
@@ -103,7 +109,7 @@ function Header() {
                   </li>
                   <li class="has-child">
                     <a href="javascript:;">Services</a>
-                    <ul class="sub-menu" style={{ width: "500px" }}>
+                    <ul class="sub-menu " style={{width:"600px"}}>
                       {keyAreas.map((data) => {
                         return (
                           <li key={data}>
@@ -116,7 +122,7 @@ function Header() {
                   <li class="has-child">
                     <a href="javascript:;">About us</a>
                   </li>
-                  <li class="has-child">
+                  <li class="test has-child">
                     <a href="javascript:;">Contact us</a>
                   </li>
                 </ul>
@@ -127,22 +133,18 @@ function Header() {
                   <ul class="aon-social-icon-3 d-flex">
                     <li>
                       <a href="javascript:void(0);">
-                        <i class="fa fa-facebook"></i>
+                        <FacebookLogo size={24} color="blue" />
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="javascript:void(0);">
+                        <InstagramLogo size={24} color="#cc0096" />
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);">
-                        <i class="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);">
-                        <i class="fa fa-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);">
-                        <i class="fa fa-linkedin-square"></i>
+                        <LinkedinLogo size={24} color="#004ecc" />
                       </a>
                     </li>
                   </ul>
@@ -150,7 +152,7 @@ function Header() {
                 <div class="extra-cell">
                   <div class="aon-live-chats">
                     <div class="aon-live-icon">
-                      <i class="flaticon-003-chat-1"></i>
+                      <CurrencyInr size={32} color="black" />
                     </div>
                     <div class="aon-live-text">
                       <strong>Your Cost-Saving Partner</strong>
