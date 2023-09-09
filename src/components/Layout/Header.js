@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import keyAreas from "../../lib/Constant";
+import keyAreas from "../../lib/KeyAreas";
 
 function Header() {
   const [showLogo, setShowLogo] = useState(false);

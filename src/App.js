@@ -3,6 +3,8 @@ import ServiceCard from "./components/ServiceCard";
 import Slider from "./components/Slider";
 import BottomToTop from "./components/Utility/BottomToTop";
 import WhoWeAre from "./components/WhoWeAre";
+import Aboutus from "./components/Aboutus"
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Slider />
       <WhoWeAre />
       <ServiceCard />
+      <Aboutus/>
       <BottomToTop/>
     </>
   );
