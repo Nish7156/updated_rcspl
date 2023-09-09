@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import keyAreas from "../../lib/Constant";
 
 function Header() {
+  const [showLogo, setShowLogo] = useState(false);
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 100) {
+        setShowLogo(true);
+      } else {
+        setShowLogo(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <header class="site-header header-style-1 mobile-sider-drawer-menu">
@@ -12,7 +28,7 @@ function Header() {
                 <div class="logo-header">
                   <div class="logo-header-inner logo-header-one">
                     <a href="index.html">
-                      <img src="images/logo.png" alt="" />
+                      <img src="images/MainLogo.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -66,12 +82,19 @@ function Header() {
                 <span class="icon-bar icon-bar-two"></span>
                 <span class="icon-bar icon-bar-three"></span>
               </button>
-              {/* navLogo */}
-              {/* <div class="logo-header-inner logo-header-one">
-                <a href="index.html">
-                  <img src="images/logo.png" alt="" />
-                </a>
-              </div> */}
+              {showLogo && (
+                <div
+                  class=""
+                  style={{
+                    height: "auto",
+                    width: "190px",
+                  }}
+                >
+                  <a href="index.html">
+                    <img src="images/MainLogo.png" alt="" />
+                  </a>
+                </div>
+              )}
 
               <div class="nav-animation header-nav header-nav2 navbar-collapse collapse d-flex">
                 <ul class="nav navbar-nav">
@@ -80,7 +103,7 @@ function Header() {
                   </li>
                   <li class="has-child">
                     <a href="javascript:;">Services</a>
-                    <ul class="sub-menu" style={{width:"500px"}}>
+                    <ul class="sub-menu" style={{ width: "500px" }}>
                       {keyAreas.map((data) => {
                         return (
                           <li key={data}>

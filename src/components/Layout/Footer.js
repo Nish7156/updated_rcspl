@@ -10,7 +10,7 @@ function Footer() {
               <div class="col-lg-3 col-md-6 col-12">
                 <div class="sf-widget-link f-margin">
                   <div class="aon-footer-logo-2">
-                    <img src="images/logo2.png" alt="" />
+                    <img src="images/MainLogo.png" alt="" />
                   </div>
                   <div class="aon-footer-text-2">
                     There are many variations of passages of Lorem Ipsum
