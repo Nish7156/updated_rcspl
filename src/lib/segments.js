@@ -1,9 +1,11 @@
-
+import Islider1 from "./images/slider1.jpg";
+import Islider2 from "./images/slider2.jpeg";
+import Islider3 from "./images/slider3.jpeg";
 
 const segments = [
   {
     category: "Project Reports and Approvals",
-    img:"https://via.placeholder.com/300x200",
+    img:Islider1,
     services: [
       "Preliminary Project Reports (PPR)",
       "Detailed Project Reports (DPR)",
@@ -13,7 +15,7 @@ const segments = [
   },
   {
     category: "Industrial Setup and Approvals",
-    img:"https://via.placeholder.com/300x200",
+    img:Islider1,
     services: [
       "MIDC Plot Allotment for Industries",
       "MIDC Pre & Post Setup Approvals",
@@ -23,7 +25,7 @@ const segments = [
   },
   {
     category: "Hospitality and Food Industry",
-    img:"https://via.placeholder.com/300x200",
+    img:Islider2,
     services: [
       "Hotel & Resorts Approvals",
       "Import Permits & DGFT Services",
@@ -33,7 +35,7 @@ const segments = [
   },
   {
     category: "Regulatory Compliance and Environmental",
-    img:"https://via.placeholder.com/300x200",
+    img:Islider3,
     services: [
       "Petrochem (PESO) Approvals",
       "Infrastructure & Real Estates",
