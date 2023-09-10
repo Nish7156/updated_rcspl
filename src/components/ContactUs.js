@@ -34,7 +34,7 @@ function ContactUs() {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="contact">
       <div className="">
         <div className="">
           <div

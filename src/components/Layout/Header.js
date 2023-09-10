@@ -41,7 +41,7 @@ function Header() {
 
   const menuItems = mainMenus.map((menu, index) => (
     <li className={menu.subMenu ? "has-child" : ""} key={index}>
-      <a href="">{menu.title}</a>
+      <a href={`#${menu.id}`}>{menu.title}</a>
       {generateSubMenu(menu.subMenu)}
     </li>
   ));
