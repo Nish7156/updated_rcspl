@@ -3,7 +3,8 @@ import ServiceCard from "./components/ServiceCard";
 import Slider from "./components/Slider";
 import BottomToTop from "./components/Utility/BottomToTop";
 import WhoWeAre from "./components/WhoWeAre";
-import Aboutus from "./components/Aboutus"
+import Aboutus from "./components/Aboutus";
+import Accordian from "./components/Accordian"
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <>
       <Slider />
       <WhoWeAre />
-      <ServiceCard />
+      <Accordian/>
+      {/* <ServiceCard /> */}
       <Aboutus/>
       <BottomToTop/>
     </>
