@@ -108,8 +108,11 @@ function Header() {
                     <a href="javascript:;">Home</a>
                   </li>
                   <li class="has-child">
+                    <a href="javascript:;">About us</a>
+                  </li>
+                  <li class="has-child">
                     <a href="javascript:;">Services</a>
-                    <ul class="sub-menu " style={{width:"600px"}}>
+                    <ul class="sub-menu " style={{ width: "600px" }}>
                       {keyAreas.map((data) => {
                         return (
                           <li key={data}>
@@ -119,9 +122,7 @@ function Header() {
                       })}
                     </ul>
                   </li>
-                  <li class="has-child">
-                    <a href="javascript:;">About us</a>
-                  </li>
+                 
                   <li class="test has-child">
                     <a href="javascript:;">Contact us</a>
                   </li>
@@ -133,18 +134,17 @@ function Header() {
                   <ul class="aon-social-icon-3 d-flex">
                     <li>
                       <a href="javascript:void(0);">
-                        <FacebookLogo size={24} color="blue" />
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="javascript:void(0);">
-                        <InstagramLogo size={24} color="#cc0096" />
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);">
-                        <LinkedinLogo size={24} color="#004ecc" />
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <i class="fa fa-linkedin-square"></i>
                       </a>
                     </li>
                   </ul>

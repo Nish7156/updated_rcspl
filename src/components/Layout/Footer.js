@@ -27,17 +27,17 @@ function Footer() {
                   <ul class="aon-social-icon-2 d-flex">
                     <li>
                       <a href="javascript:void(0);">
-                        <FacebookLogo size={24} color="blue" />
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);">
-                        <InstagramLogo size={24} color="#cc0096" />
+                        <i class="fa fa-instagram"></i>
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);">
-                        <LinkedinLogo size={24} color="#004ecc" />
+                        <i class="fa fa-linkedin-square"></i>
                       </a>
                     </li>
                   </ul>
@@ -46,26 +46,19 @@ function Footer() {
               <div class="col-lg-3 col-md-6 col-12">
                 <div class="aon-ftr-info-wrap f-margin">
                   <h4 class="aon-f-title-2">Information</h4>
-                  <ul class="aon-ftr-info test" style={{ paddingLeft: "0px" }}>
+                  <ul class="aon-ftr-info">
                     <li>
-                      <span style={{ marginRight: "8px" }}>
-                        {" "}
-                        <EnvelopeSimple size={24} color="#303031" />
-                      </span>
-                      <span>info@rcspl.co.in</span>
+                      <i class="feather-mail"></i> <span>info@rcspl.co.in</span>
                     </li>
                     <li>
-                      <span style={{ marginRight: "8px" }}>
-                        <PhoneCall size={24} color="#303031" />
-                      </span>
+                      <i class="feather-phone"></i>{" "}
                       <span>Call Me 98220 59460</span>
                     </li>
                     <li>
-                      <span style={{ marginRight: "8px" }}>
-                        <At size={24} color="#303031" />
-                      </span>
+                      <i class="feather-map-pin"></i>{" "}
                       <span>
-                        1314, 13th Floor, C1, Opal Square, S. G. Barve Road,
+                        1314, 13th Floor, C1, Opal Square <br />
+                        CS. G. Barve Road, <br />
                         Wagle Estate, Thane - 400604, Maharashtra, India.
                       </span>
                     </li>

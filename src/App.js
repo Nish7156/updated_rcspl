@@ -4,6 +4,7 @@ import Slider from "./components/Slider";
 import BottomToTop from "./components/Utility/BottomToTop";
 import WhoWeAre from "./components/WhoWeAre";
 import Aboutus from "./components/Aboutus"
+import ContactUs from "./components/ContactUs";
 
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
       <WhoWeAre />
       <ServiceCard />
       <Aboutus/>
+     <div className="my-2">
+     <ContactUs/>
+     </div>
       <BottomToTop/>
     </>
   );
