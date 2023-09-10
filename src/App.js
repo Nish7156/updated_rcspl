@@ -14,7 +14,7 @@ function App() {
       <WhoWeAre />
       <ServiceCard />
       <Aboutus/>
-     <div className="my-2">
+     <div id="about" className="my-2">
      <ContactUs/>
      </div>
       <BottomToTop/>
