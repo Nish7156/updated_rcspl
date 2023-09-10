@@ -4,7 +4,7 @@ import segments from "../lib/segments";
 function Slider() {
   return (
     <>
-      <div class="aon-bnr-carousal-area">
+      <div class="aon-bnr-carousal-area" id="home">
         <div class="section-content">
           <div class="owl-carousel aon-bnr1-carousal owl-btn-vertical-center">
             {segments &&

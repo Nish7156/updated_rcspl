@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import keyAreas from "../../lib/KeyAreas";
-import {
-  InstagramLogo,
-  LinkedinLogo,
-  FacebookLogo,
-  CurrencyInr,
-} from "@phosphor-icons/react";
+import { CurrencyInr } from "@phosphor-icons/react";
+import useScrollSpy from "../../Hooks/useScrollSpy";
+import { mainMenus } from "../../lib/constant";
+import { scrollToSection } from "../../lib/healper";
 
 function Header() {
   const [showLogo, setShowLogo] = useState(false);
+  const activeSection = useScrollSpy(mainMenus);
   useEffect(() => {
     function handleScroll() {
       if (window.scrollY > 100) {
@@ -24,6 +23,28 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  function generateSubMenu(subMenuData) {
+    if (!subMenuData) {
+      return null;
+    }
+
+    return (
+      <ul className="sub-menu" style={{ width: "600px" }}>
+        {subMenuData.map((item, index) => (
+          <li key={index} onClick={() => scrollToSection(`${item.id}`)}>
+            <a href={`#${item.id}`}>{item.subTitle}</a>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+  const menuItems = mainMenus.map((menu, index) => (
+    <li className={menu.subMenu ? "has-child" : ""} key={index}>
+      <a href={`#${menu.id}`}>{menu.title}</a>
+      {generateSubMenu(menu.subMenu)}
+    </li>
+  ));
   return (
     <>
       <header class="site-header header-style-1 mobile-sider-drawer-menu">
@@ -103,29 +124,7 @@ function Header() {
               )}
 
               <div class="nav-animation header-nav header-nav2 navbar-collapse collapse d-flex">
-                <ul class="nav navbar-nav">
-                  <li class="has-child current-menu-item">
-                    <a href="javascript:;">Home</a>
-                  </li>
-                  <li class="has-child">
-                    <a href="javascript:;">Services</a>
-                    <ul class="sub-menu " style={{width:"600px"}}>
-                      {keyAreas.map((data) => {
-                        return (
-                          <li key={data}>
-                            <a href="about.html">{data.title}</a>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </li>
-                  <li class="has-child">
-                    <a href="javascript:;">About us</a>
-                  </li>
-                  <li class="test has-child">
-                    <a href="javascript:;">Contact us</a>
-                  </li>
-                </ul>
+                <ul class="nav navbar-nav">{menuItems}</ul>
               </div>
 
               <div class="extra-nav header-2-nav">
@@ -133,18 +132,17 @@ function Header() {
                   <ul class="aon-social-icon-3 d-flex">
                     <li>
                       <a href="javascript:void(0);">
-                        <FacebookLogo size={24} color="blue" />
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="javascript:void(0);">
-                        <InstagramLogo size={24} color="#cc0096" />
+                        <i class="fa fa-facebook"></i>
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0);">
-                        <LinkedinLogo size={24} color="#004ecc" />
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        <i class="fa fa-linkedin-square"></i>
                       </a>
                     </li>
                   </ul>
