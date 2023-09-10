@@ -1,12 +1,11 @@
 import React from "react";
-import {
-  ArrowUp} from "@phosphor-icons/react";
+
 
 function BottomToTop() {
   return (
     <>
       <button class="scroltop">
-        <ArrowUp size={32} color="white" />
+      <span class="fa fa-angle-up  relative" id="btn-vibrate"></span>
       </button>
     </>
   );

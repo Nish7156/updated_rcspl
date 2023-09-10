@@ -91,7 +91,7 @@ function Footer() {
                       <i class="feather-arrow-right"></i>
                     </button>
                   </form>
-                  <ul class="aon-privacy-links">
+                  {/* <ul class="aon-privacy-links">
                     <li>
                       <a href="about.html">Help Center</a>
                     </li>
@@ -101,7 +101,7 @@ function Footer() {
                     <li>
                       <a href="about.html">About us</a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>

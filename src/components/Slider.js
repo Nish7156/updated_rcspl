@@ -21,9 +21,9 @@ function Slider() {
                       <div class="container">
                         <div class="aon-slider1-content">
                           <div class="aon-slider1-title">{data?.category}</div>
-                          {/* <div class="aon-slider1-detail">
-                            Preliminary Project Reports (PPR)
-                          </div> */}
+                          <div class="aon-slider1-detail">
+                           {data.subTitle}
+                          </div>
                         </div>
                       </div>
                     </div>

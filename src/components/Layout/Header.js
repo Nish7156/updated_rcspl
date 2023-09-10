@@ -32,7 +32,7 @@ function Header() {
       <ul className="sub-menu" style={{ width: "600px" }}>
         {subMenuData.map((item, index) => (
           <li key={index} onClick={() => scrollToSection(`${item.id}`)}>
-            <a href={`#${item.id}`}>{item.subTitle}</a>
+            <a href={``}>{item.subTitle}</a>
           </li>
         ))}
       </ul>

@@ -4,22 +4,23 @@ import Slider from "./components/Slider";
 import BottomToTop from "./components/Utility/BottomToTop";
 import WhoWeAre from "./components/WhoWeAre";
 import Aboutus from "./components/Aboutus";
-import Accordian from "./components/Accordian"
+import Accordian from "./components/Accordian";
 import ContactUs from "./components/ContactUs";
-
+import Clients from "./components/Clients";
 
 function App() {
   return (
     <>
       <Slider />
       <WhoWeAre />
-      <Accordian/>
+      <Accordian />
       {/* <ServiceCard /> */}
-      <Aboutus/>
-     <div className="my-2">
-     <ContactUs/>
-     </div>
-      <BottomToTop/>
+      <Aboutus />
+      <Clients/>
+      <div className="my-2">
+        <ContactUs />
+      </div>
+      <BottomToTop />
     </>
   );
 }

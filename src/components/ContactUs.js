@@ -38,7 +38,7 @@ function ContactUs() {
       <div className="">
         <div className="">
           <div
-            className="aon-contact-wrap"
+            className=""
             style={{
               border: "black",
               borderWidth: "1px",
@@ -46,14 +46,12 @@ function ContactUs() {
               borderStyle: "solid",
               padding: "12px",
               borderRadius: "10px",
+              marginTop:"36px"
             }}
           >
             <div className="sf-con-form-title m-b30">
               <h3 className="m-b10">Contact Us</h3>
-              <p>
-                Phasellus ac consequat turpis, sit amet. Please Required fields
-                mark *
-              </p>
+           
             </div>
 
             <form className="contact-form" onSubmit={handleSubmit}>

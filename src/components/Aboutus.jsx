@@ -23,7 +23,7 @@ function Aboutus() {
                   <div className="aon-pro-pic2">
                     <img src="images/pro-pic1.jpg" alt="" />
                   </div>
-                  <span className="aon-pro-pic-label"> Since 2006</span>
+                  <span className="aon-pro-pic-label"> Since 2018</span>
                 </div>
               </div>
               <div
